@@ -2,7 +2,7 @@ define(['./storage'], function(Storage) {
 
 	//if user has saved the language preference before, lets use that to configure requirejs i18n
 	var userLang;
-	if (userLang = Storage.retreive("user-language")) {
+	if (userLang = Storage.retrieve("user-language")) {
 		require.config({
 			locale : userLang
 		});
