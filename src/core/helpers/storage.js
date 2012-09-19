@@ -1,6 +1,6 @@
 define([], function() {
 	/**
-	This is used to store persistent data and retreive them or remove them when it is required. 
+	This is used to store and retrieve persistent data, or remove them when it is required. 
 	 
  	
  	@namespace Boiler.Helpers
@@ -22,11 +22,11 @@ define([], function() {
 	/**
 	Returns a stored value based ob the key
 
-	@method retreive		
+	@method retrieve		
 	@param {Object} key Identifier for the value being stored
 	@return 
 	**/	
-	Storage.retreive = function(key) {
+	Storage.retrieve = function(key) {
 		return amplify.store(key);
 	};
 	/**
